@@ -7,6 +7,7 @@ import { AdministrationLoginComponent } from './administration-login/administrat
 import { RouterModule, Routes } from '@angular/router';
 import { UserSignupComponent } from './user-signup/user-signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { BookEntryComponent } from './book-entry/book-entry.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -19,6 +20,10 @@ const myRoute:Routes=[
   {
     path:"login",
     component:UserLoginComponent
+  },
+  {
+    path:"entry",
+    component:BookEntryComponent
   }
 ]
 @NgModule({
@@ -26,7 +31,8 @@ const myRoute:Routes=[
     AppComponent,
     AdministrationLoginComponent,
     UserSignupComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    BookEntryComponent
   ],
   imports: [
     BrowserModule,
