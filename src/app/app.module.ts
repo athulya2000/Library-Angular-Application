@@ -9,6 +9,7 @@ import { UserSignupComponent } from './user-signup/user-signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewAllbooksComponent } from './view-allbooks/view-allbooks.component';
+import { BooksSearchComponent } from './books-search/books-search.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -29,6 +30,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewAllbooksComponent
+  },
+  {
+    path:"search",
+    component:BooksSearchComponent
   }
 ]
 @NgModule({
@@ -38,7 +43,8 @@ const myRoute:Routes=[
     UserSignupComponent,
     UserLoginComponent,
     BookEntryComponent,
-    ViewAllbooksComponent
+    ViewAllbooksComponent,
+    BooksSearchComponent
   ],
   imports: [
     BrowserModule,
