@@ -13,6 +13,7 @@ import { BooksSearchComponent } from './books-search/books-search.component';
 import { BooksDeleteComponent } from './books-delete/books-delete.component';
 import { BooksEditComponent } from './books-edit/books-edit.component';
 import { BooksIssueComponent } from './books-issue/books-issue.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -62,7 +63,8 @@ const myRoute:Routes=[
     BooksSearchComponent,
     BooksDeleteComponent,
     BooksEditComponent,
-    BooksIssueComponent
+    BooksIssueComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
