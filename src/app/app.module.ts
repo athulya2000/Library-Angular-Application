@@ -12,6 +12,7 @@ import { ViewAllbooksComponent } from './view-allbooks/view-allbooks.component';
 import { BooksSearchComponent } from './books-search/books-search.component';
 import { BooksDeleteComponent } from './books-delete/books-delete.component';
 import { BooksEditComponent } from './books-edit/books-edit.component';
+import { BooksIssueComponent } from './books-issue/books-issue.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -44,6 +45,10 @@ const myRoute:Routes=[
   {
     path:"edit",
     component:BooksEditComponent
+  },
+  {
+    path:"issue",
+    component:BooksIssueComponent
   }
 ]
 @NgModule({
@@ -56,7 +61,8 @@ const myRoute:Routes=[
     ViewAllbooksComponent,
     BooksSearchComponent,
     BooksDeleteComponent,
-    BooksEditComponent
+    BooksEditComponent,
+    BooksIssueComponent
   ],
   imports: [
     BrowserModule,
