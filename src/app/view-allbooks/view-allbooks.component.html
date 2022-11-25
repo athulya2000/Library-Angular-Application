@@ -3,118 +3,19 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of books">
                     <div class="card">
-                        <img height="200px" width="300px" src="https://3.imimg.com/data3/VM/WT/MY-12313319/kalam-500x500.jpeg" class="card-img-top" alt="...">
+                        <img height="200px" width="300px" src="{{i.image}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Wings Of Fire</h5>
-                          <p class="card-text">APJ Abdulkalam</p>
-                          <p class="card-text">250</p>
+                          <h5 class="card-title">{{i.titie}}</h5>
+                          <p class="card-text">{{i.author}}</p>
+                          <p class="card-text">{{i.price}}</p>
                           <a href="#" class="btn btn-warning">BUY NOW</a>
                         </div>
                       </div>
                 </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://www.frontlist.in/storage/uploads/2021/02/The-Guide-by-RK-Narayan.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">The Guide</h5>
-                          <p class="card-text">RK Narayanan</p>
-                          <p class="card-text">245</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://m.media-amazon.com/images/I/5110piHSh9L._SX346_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Born To Write</h5>
-                          <p class="card-text">Charis Cotter</p>
-                          <p class="card-text">150</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://m.media-amazon.com/images/I/915hExGyhVL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">The Alchemist</h5>
-                          <p class="card-text">Paulo Coelho/p>
-                          <p class="card-text">350</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px"  width="300px" src="https://www.famousauthors.org/images/childrens-books/harry-potter-and-the-philosophers-stone.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Harry Potter</h5>
-                          <p class="card-text">RK Rowling</p>
-                          <p class="card-text">250</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://cdn.lifehack.org/wp-content/uploads/2022/11/51vRNqL61aL._SL500_.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Kite Runner</h5>
-                          <p class="card-text">Khaled Hosseini</p>
-                          <p class="card-text">175</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px"  width="300px" src="https://m.media-amazon.com/images/I/71bJLYaVAsL.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">I Have A Dream</h5>
-                          <p class="card-text">Rashmi Bansal</p>
-                          <p class="card-text">275</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://jamesclear.com/wp-content/uploads/2022/09/9M-atomic-habits-dots.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Atomic Habits</h5>
-                          <p class="card-text">James Clear</p>
-                          <p class="card-text">299</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://fivebooks.com/app/uploads/2017/04/1910065099.01.LZ_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">The Ring Of Bright Water</h5>
-                          <p class="card-text">Gavin Maxwell</p>
-                          <p class="card-text">159</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="200px" width="300px" src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Alice-in-Deadland-Trilogy-by-Mainak-Dhar.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Deadland</h5>
-                          <p class="card-text">Mainack Dhar</p>
-                          <p class="card-text">269</p>
-                          <a href="#" class="btn btn-warning">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-            </div>
+              </div>
         </div>
     </div>
 </div>
+                
